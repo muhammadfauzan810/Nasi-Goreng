@@ -24,6 +24,7 @@ class Welcome extends CI_Controller
 		parent::__construct();
 		$this->load->model('Tambah_Menu');
 		$this->load->model('Edit_Menu');
+		$this->load->model('Delete_Menu');
 	}
 
 
@@ -120,7 +121,7 @@ class Welcome extends CI_Controller
 				'gambar' => $gambar,
 			);
 
-			$this->Edit_Menu->EditMenu($DataInsert);
+			$this->Edit_Menu->EditMenu($DataInsert, $id);
 			redirect("/");
 		} else {
 			$menu = $this->Edit_Menu->ChangeEdit($id)->row();
@@ -133,6 +134,14 @@ class Welcome extends CI_Controller
 			];
 			$this->load->view('edit_menu', $data);
 		}
+
+	}
+
+	public function Delete()
+	{
+		$id = $this->uri->segment(3);
+		$this->Delete_Menu->getDelete($id);
+		redirect("/");
 
 	}
 }

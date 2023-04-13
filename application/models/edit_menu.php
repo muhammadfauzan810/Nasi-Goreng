@@ -15,8 +15,8 @@ class Edit_Menu extends CI_Model
         return $this->db->get_where('menu', array('id' => $id));
     }
 
-    public function EditMenu($data)
+    public function EditMenu($data, $id)
     {
-        $this->db->replace('edit', $data);
+        $this->db->update('menu', $data, array("id" => $id));
     }
 }

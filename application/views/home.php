@@ -70,7 +70,8 @@
         color: white;
     }
 
-    .table__tools>a:nth-child(2) {
+    .table__tools>form>button {
+        padding: 8px 12px;
         background-color: crimson;
         color: white;
     }
@@ -122,7 +123,11 @@
                 <td>
                     <div class="table__tools">
 
-                        <a href="<?php echo base_url("welcome/edit_menu/{$row->id}") ?>">Edit</a><a href="">Delete</a>
+                        <a href="<?php echo base_url("welcome/edit_menu/{$row->id}") ?>">Edit</a>
+                        <form action="<?php echo base_url("welcome/Delete/{$row->id}") ?>" method="post">
+                            <button type="submit">Delete</button>
+                        </form>
+
                     </div>
                 </td>
             </tr>
