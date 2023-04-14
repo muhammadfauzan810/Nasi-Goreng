@@ -4,6 +4,10 @@
 <head>
     <title>Tambah Menu</title>
     <style type="text/css">
+    body {
+        background-color: #F5F5DC;
+    }
+
     * {
         font-family: Georgia, 'Times New Roman', Times, serif;
     }

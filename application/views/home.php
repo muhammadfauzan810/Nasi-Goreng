@@ -6,9 +6,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style type="text/css">
+        body {
+            background-color: #F5F5DC;
+        }
+
         * {
             font-family: 'Roboto', sans-serif;
         }
+
+
 
         h1 {
             text-transform: uppercase;
@@ -17,7 +23,7 @@
 
         .btn_menu {
             background-color: #285430;
-            padding: 8px 12px;
+            padding: 15px;
             border: none;
             color: white;
             text-shadow: 0.5px 0.5px 0.5px #fff;
@@ -60,7 +66,7 @@
         }
 
         .table__tools>a {
-            padding: 8px 12px;
+            padding: 10px;
             border: none;
             text-decoration: none;
         }
@@ -74,6 +80,7 @@
             padding: 8px 12px;
             background-color: crimson;
             color: white;
+            cursor: pointer;
         }
     </style>
 </head>

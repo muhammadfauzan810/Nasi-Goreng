@@ -4,50 +4,54 @@
 <head>
     <title>Edit Menu</title>
     <style type="text/css">
-        * {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
+    body {
+        background-color: #F5F5DC;
+    }
 
-        h1 {
-            text-transform: uppercase;
-            color: black;
-        }
+    * {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 
-        label {
-            margin-top: 10px;
-            float: left;
-            text-align: left;
-            width: 100%;
-        }
+    h1 {
+        text-transform: uppercase;
+        color: black;
+    }
 
-        .base {
-            width: 400px;
-            padding: 20px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #ededed;
-        }
+    label {
+        margin-top: 10px;
+        float: left;
+        text-align: left;
+        width: 100%;
+    }
 
-        input {
-            padding: 6px;
-            width: 100%;
-            box-sizing: border-box;
-            background-color: #f8f8f8;
-            border: 2px solid #ccc;
-            outline-color: blue;
+    .base {
+        width: 400px;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ededed;
+    }
 
-        }
+    input {
+        padding: 6px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #f8f8f8;
+        border: 2px solid #ccc;
+        outline-color: blue;
 
-        button {
-            text-align: center;
-            background-color: blue;
-            color: white;
-            padding: 10px;
-            font-size: 15px;
-            border: 0;
-            margin-top: 20px;
-            cursor: pointer;
-        }
+    }
+
+    button {
+        text-align: center;
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        font-size: 15px;
+        border: 0;
+        margin-top: 20px;
+        cursor: pointer;
+    }
     </style>
 </head>
 
