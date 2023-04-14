@@ -6,75 +6,75 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style type="text/css">
-    * {
-        font-family: 'Roboto', sans-serif;
-    }
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
 
-    h1 {
-        text-transform: uppercase;
-        color: black;
-    }
+        h1 {
+            text-transform: uppercase;
+            color: black;
+        }
 
-    .btn_menu {
-        background-color: #285430;
-        padding: 8px 12px;
-        border: none;
-        color: white;
-        text-shadow: 0.5px 0.5px 0.5px #fff;
-        cursor: pointer;
+        .btn_menu {
+            background-color: #285430;
+            padding: 8px 12px;
+            border: none;
+            color: white;
+            text-shadow: 0.5px 0.5px 0.5px #fff;
+            cursor: pointer;
 
-    }
+        }
 
-    table {
-        border: 1px solid #deee;
-        border-collapse: collapse;
-        border-spacing: 0;
-        width: 70%;
-        margin: 10px auto 10px auto;
-    }
+        table {
+            border: 1px solid #deee;
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 70%;
+            margin: 10px auto 10px auto;
+        }
 
-    table thead th {
-        background-color: #333;
-        border: 5px solid #333;
-        color: white;
-        text-align: center;
-    }
+        table thead th {
+            background-color: #333;
+            border: 5px solid #333;
+            color: white;
+            text-align: center;
+        }
 
-    table tbody td {
-        border: 5px solid #ddeeee;
-        color: #333;
-        padding: 10px;
-        text-align: center;
-    }
+        table tbody td {
+            border: 5px solid #ddeeee;
+            color: #333;
+            padding: 10px;
+            text-align: center;
+        }
 
-    .table__image {
-        object-fit: contain;
-        height: 80px;
-    }
+        .table__image {
+            object-fit: contain;
+            height: 80px;
+        }
 
-    .table__tools {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-    }
+        .table__tools {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
 
-    .table__tools>a {
-        padding: 8px 12px;
-        border: none;
-        text-decoration: none;
-    }
+        .table__tools>a {
+            padding: 8px 12px;
+            border: none;
+            text-decoration: none;
+        }
 
-    .table__tools>a:nth-child(1) {
-        background-color: #63a8ff;
-        color: white;
-    }
+        .table__tools>a:nth-child(1) {
+            background-color: #63a8ff;
+            color: white;
+        }
 
-    .table__tools>form>button {
-        padding: 8px 12px;
-        background-color: crimson;
-        color: white;
-    }
+        .table__tools>form>button {
+            padding: 8px 12px;
+            background-color: crimson;
+            color: white;
+        }
     </style>
 </head>
 
@@ -106,31 +106,32 @@
             foreach ($menu as $row) {
                 $count = $count + 1;
                 ?>
-            <tr>
-                <td>
-                    <?php echo $count ?>
-                </td>
-                <td>
-                    <?php echo $row->kd_menu ?>
-                </td>
-                <td>
-                    <?php echo $row->nm_menu ?>
-                </td>
-                <td>
-                    <?php echo $row->harga ?>
-                </td>
-                <td><img src="<?= base_url("assets/image/{$row->gambar}") ?>" class="table__image"></td>
-                <td>
-                    <div class="table__tools">
+                <tr>
+                    <td>
+                        <?php echo $count ?>
+                    </td>
+                    <td>
+                        <?php echo $row->kd_menu ?>
+                    </td>
+                    <td>
+                        <?php echo $row->nm_menu ?>
+                    </td>
+                    <td>
+                        Rp.
+                        <?php echo $row->harga ?>
+                    </td>
+                    <td><img src="<?= base_url("assets/image/{$row->gambar}") ?>" class="table__image"></td>
+                    <td>
+                        <div class="table__tools">
 
-                        <a href="<?php echo base_url("welcome/edit_menu/{$row->id}") ?>">Edit</a>
-                        <form action="<?php echo base_url("welcome/Delete/{$row->id}") ?>" method="post">
-                            <button type="submit">Delete</button>
-                        </form>
+                            <a href="<?php echo base_url("welcome/edit_menu/{$row->id}") ?>">Edit</a>
+                            <form action="<?php echo base_url("welcome/Delete/{$row->id}") ?>" method="post">
+                                <button type="submit">Delete</button>
+                            </form>
 
-                    </div>
-                </td>
-            </tr>
+                        </div>
+                    </td>
+                </tr>
             <?php } ?>
         </tbody>
     </table>
