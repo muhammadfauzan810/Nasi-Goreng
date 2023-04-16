@@ -82,6 +82,11 @@
             color: white;
             cursor: pointer;
         }
+
+        .container {
+            background-color: dark;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
@@ -142,7 +147,6 @@
             <?php } ?>
         </tbody>
     </table>
-
 </body>
 
 </html>

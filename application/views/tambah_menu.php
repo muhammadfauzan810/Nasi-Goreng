@@ -57,6 +57,24 @@
         color: crimson;
         font-size: 15px;
     }
+
+    .kmbl {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .kmbl>a {
+        padding: 10px;
+        border: none;
+        text-decoration: none;
+    }
+
+    .kmbl>a:nth-child(1) {
+        background-color: #000000;
+        color: #FF8C00;
+    }
     </style>
 </head>
 
@@ -91,6 +109,10 @@
             </div>
         </form>
     </section>
+
+    <div class="kmbl">
+        <a href="<?php echo base_url("welcome") ?>">Kembali</a>
+    </div>
 
 </body>
 

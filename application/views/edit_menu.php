@@ -52,6 +52,24 @@
         margin-top: 20px;
         cursor: pointer;
     }
+
+    .kmbl {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .kmbl>a {
+        padding: 10px;
+        border: none;
+        text-decoration: none;
+    }
+
+    .kmbl>a:nth-child(1) {
+        background-color: #000000;
+        color: #FF8C00;
+    }
     </style>
 </head>
 
@@ -84,8 +102,14 @@
             <div>
                 <center><button type="submit">Simpan Edit</button></center>
             </div>
-        </form>
+
     </section>
+
+    </form>
+
+    <div class="kmbl">
+        <a href="<?php echo base_url("welcome") ?>">Kembali</a>
+    </div>
 
 </body>
 
