@@ -92,9 +92,11 @@
 
 <body>
     <center>
+        <h2> SELAMAT DATANG DI </h2>
         <h1>NASI GORENG DELIVERY</h1>
     </center>
-
+    <br>
+    <br>
     <center><button class="btn_menu"
             onclick="document.location.href='<?php echo base_url('welcome/tambah_menu') ?>' ">Tambah Menu</button>
     </center>
